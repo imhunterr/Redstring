@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>redstring · ideas</title>
+<meta name="robots" content="noindex, nofollow">
+<script>
+  // set theme before paint (no flash)
+  (function(){var t;try{t=localStorage.getItem("redstring-theme");}catch(e){}
+   if(!t){t=window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}
+   document.documentElement.setAttribute("data-theme",t);})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/redstring.css">
+</head>
+<body data-page="ideas">
+<header id="topbar" class="topbar"></header>
+
+<main class="wrap">
+
+  <section class="page-head">
+    <p class="typed">WORKBENCH</p>
+    <h1>Ideas</h1>
+    <p class="lede">Every idea is a string you pull toward a pitch. Click a knot to move it along, and keep one next move on each.</p>
+  </section>
+  <section class="section flush">
+    <div class="section-head"><h2 id="ideas-summary">Pipeline</h2><button class="btn red" id="add-idea-btn" type="button">+ new idea</button></div>
+    <div id="ideas-board"></div>
+  </section>
+</main>
+
+<footer id="footer" class="foot"></footer>
+<script src="static/js/store.js"></script>
+<script src="static/js/ui.js"></script>
+<script src="static/js/ideas.js"></script>
+</body>
+</html>
